@@ -1,0 +1,359 @@
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none; 
+}
+
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----------------nav-bar--------------------*/
+#nav-bar {
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+	transition: all 0.3s ease;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#nav-bar.sticky {
+	padding: 30px 0;
+	background: crimson;
+}
+
+#nav-bar  a {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+#nav-bar  a span {
+	color: crimson;
+	transition: all 0.3s ease;
+}
+
+#navbar.sticky  a span {
+	color: #fff;
+}
+
+#nav-bar .menu .item-m {
+	list-style: none;
+	display: inline-block;
+}
+
+#nav-bar .menu .item-m a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+
+#nav-bar .menu .item-m a:hover {
+	color: crimson;
+}
+
+#nav-bar.sticky .menu .item-m a:hover  {
+	color: #fff;
+}
+/*-----------------content-1--------------------*/
+.tarjeta{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 580px;
+    background-color: dimgrey;
+}
+
+.left-container-tarjeta{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.left-container{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+   
+}
+.left-container-tarjeta .descripcion{
+    width: 50%;
+    text-align: center;
+    padding-top: 10%;
+}
+span{
+    color: crimson
+}
+.descripcion h1{
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.left-container img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.9s;
+    height: 80%;
+}
+
+
+.left-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*-----------------content-2--------------------*/
+#content-2{
+    color: #fcf7f7;
+    background-color: dimgrey;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.technolgies{
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+.technolgies h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.technolgies .container-technologies{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.technolgies .container-technologies .container-technologies-section div,
+.technolgies .container-technologies .container-technologies-section{
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: center;
+    align-items: center;
+}   
+.technolgies .container-technologies .container-technologies-section{
+    width: 100%;
+    margin: 5px 1px;
+    
+}
+.technolgies .container-technologies .container-technologies-section div{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.technolgies .container-technologies .container-technologies-section h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 10px 10px 0;
+    text-transform: none;
+}
+.technolgies .container-technologies .container-technologies-section h2::after{
+    background-color: transparent;
+}
+.technolgies .container-technologies .icons{
+    width: 20%;
+    min-width: 84px;
+    max-width: 120px;
+    height: auto;
+    border-radius: 5%;
+    padding: 15px 0 20px;
+    transition: all 1s linear;
+    position: relative;
+}
+.technolgies .container-technologies .icons i{
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(53, 53, 53);
+    padding: 1px 10px;
+}
+.technolgies .container-technologies .icons h3{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    transform: translateY(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .8s linear;
+    position: absolute;
+    bottom: 0;
+}
+.technolgies .container-technologies .icons:hover h3{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.technolgies .container-technologies .html5:hover i{
+    color:rgb(255, 123, 75);
+}
+.technolgies .container-technologies .css:hover i{
+    color:royalblue;
+}
+.technolgies .container-technologies .js:hover i{
+    color:yellow;
+}
+.technolgies .container-technologies .java:hover i{
+    color:red;
+}
+.technolgies .container-technologies .git:hover i{
+    color: orangered;
+}
+.technolgies .container-technologies .gitHub:hover i{
+    color:black;
+    text-shadow: 0 0 2px gray;
+}
+/*-----------------content-3--------------------*/
+#content-3{
+    background-color: dimgray;
+}
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #fdfbfb;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:rgb(19, 18, 18);
+	box-shadow: 0px 1px 10px rgba(122, 120, 120, 0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #fcf7f7;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #fdfdfd;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*-----------------content-4--------------------*/
+/*-----------------content-5--------------------*/
+#content-5 {
+	background-color: black;
+	background-image: 
+	linear-gradient( 189deg, rgba(7, 3, 5, 0.6), rgba(62, 51, 34, 0.5)),
+	url(https://www.grupoioe.es/wp-content/uploads/2018/10/141.Dinamicas-de-trabajo-en-equipo-para-potenciar-talento.jpg);
+	height: 560px;
+}
+
+
+#content-5 .cont {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 77px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 97px 40px 30px;
+}
+
+
+#content-5 .contact-link {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+}
+
+#content-5 .contact-link i {
+	padding: 10px;
+	transition: .3s ease;
+	margin: 10px;
+}
+#GitHub{
+    background: rgba(80, 19, 97, 0.6);
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+}
+
+#GitHub:hover {
+	cursor: pointer;
+	color: rgb(243, 235, 235);
+	transform: translateY(-6px);
+}
+
+#email{
+    background: rgba(217, 22, 27, 0.6);
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+#email:hover {
+	cursor: pointer;
+	color: rgb(241, 237, 237);
+	transform: translateY(-6px);
+}
+#linkedin{
+	background: rgba(12, 31, 109, 0.6);
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+}
+#linkedin:hover {
+	cursor: pointer;
+	color: rgb(249, 249, 250);
+	transform: translateY(-6px);
+}
+
+#content-5 .contact-link i a {
+	color: rgb(249, 249, 250);
+	text-decoration: none;
+    font-size: xx-large;
+	font-weight: bold;
+}
